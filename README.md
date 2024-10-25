@@ -1,31 +1,24 @@
-# RSSchool NodeJS websocket task template
-> Static http server and base task packages. 
-> By default WebSocket client tries to connect to the 3000 port.
+# Prereqisites
 
-## Installation
-1. Clone/download repo
-2. `npm install`
+Task: websocket battleship (https://github.com/AlreadyBored/nodejs-assignments/blob/main/assignments/battleship/assignment.md)
+
+Done 25.10.2024 / deadline 05.11.2024
+
+Score: 188 / 188
+
+# RSSchool NodeJS websocket task implementation
+> Client App is served the 8181 port! (can be changed via .env file)
+> All WebSocket clients connect to the 3000 port!
 
 ## Usage
 **Development**
 
 `npm run start:dev`
 
-* App served @ `http://localhost:8181` with nodemon
-
 **Production**
 
 `npm run start`
 
-* App served @ `http://localhost:8181` without nodemon
+**Peculiarities**
 
----
-
-**All commands**
-
-Command | Description
---- | ---
-`npm run start:dev` | App served @ `http://localhost:8181` with nodemon
-`npm run start` | App served @ `http://localhost:8181` without nodemon
-
-**Note**: replace `npm` with `yarn` in `package.json` if you use yarn.
+If during the game ws-connection with client is closed, the other client is considered the winner
